@@ -20,15 +20,15 @@
       z-index: 1;
     }
 
-    /* Watermark fixed di background atas */
+    /* Watermark di tengah layar (tetep tampil waktu scroll) */
     .logo-watermark {
-      background: url('dragbran.png') no-repeat center top;
+      background: url('dragbran.png') no-repeat center center;
       background-size: 300px;
       opacity: 0.45;
       position: fixed;
-      top: 30px;
+      top: 50%;
       left: 50%;
-      transform: translateX(-50%);
+      transform: translate(-50%, -50%);
       width: 300px;
       height: 300px;
       z-index: 0;
@@ -81,7 +81,7 @@
   </style>
 </head>
 <body>
-  <!-- Watermark logo fixed -->
+  <!-- Watermark logo fixed di tengah -->
   <div class="logo-watermark"></div>
 
   <h1>PGI Core</h1>
