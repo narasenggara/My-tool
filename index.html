@@ -16,20 +16,20 @@
       text-align: center;
       padding: 20px;
       position: relative;
-      z-index: 1;
       overflow-x: hidden;
+      z-index: 1;
     }
 
-    body::before {
-      content: "";
+    /* Watermark fixed di background atas */
+    .logo-watermark {
       background: url('dragbran.png') no-repeat center top;
-      background-size: 200px;
-      opacity: 0.35; /* <-- Diubah jadi 35% */
-      position: absolute;
-      top: 40px;
+      background-size: 300px;
+      opacity: 0.6;
+      position: fixed;
+      top: 10px;
       left: 50%;
       transform: translateX(-50%);
-      width: 100%;
+      width: 300px;
       height: 300px;
       z-index: 0;
       pointer-events: none;
@@ -81,6 +81,9 @@
   </style>
 </head>
 <body>
+  <!-- Watermark logo fixed -->
+  <div class="logo-watermark"></div>
+
   <h1>PGI Core</h1>
 
   <a class="link-button" href="https://gadai.pugindo.com/dashboard" target="_blank">PUGINDO</a>
